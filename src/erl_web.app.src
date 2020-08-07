@@ -1,15 +1,21 @@
 {application, erl_web,
- [{description, "An OTP application"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {mod, {erl_web_app, []}},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {licenses, ["Apache 2.0"]},
-  {links, []}
- ]}.
+  [{description, "An OTP application"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {erl_web_app, []}},
+    {applications,
+      [cowboy,
+        lager,
+        hackney,
+        jiffy,
+        sync,
+        inets,
+        kernel,
+        stdlib
+      ]},
+    {env, []},
+    {modules, []},
+    {maintainers, []},
+    {licenses, ["Apache 2.0"]},
+    {links, []}
+  ]}.

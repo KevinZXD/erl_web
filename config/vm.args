@@ -1,0 +1,9 @@
+-sname erl_web
+
+-setcookie erl_web_cookie
+
+-smp enable
+
++K true
++A30
++P 1048576
