@@ -14,7 +14,7 @@ start(_StartType, _StartArgs) ->
   erl_web_sup:start_link().
 start_http_server() ->
   Dispatch = cowboy_router:compile([
-    {'_', [{"/", hello_handler, [http]}]}
+    {'_', [{"/", hello_handle, [http]}]}
   ]),
   {ok, _} = cowboy:start_clear(http_listener,
     [{port, 8080}],
